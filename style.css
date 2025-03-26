@@ -1,0 +1,18 @@
+.navbar {
+    background-color: #E03932;
+}
+
+.navbar-brand {
+    color: #000000;
+    font-family: "Grenze Gotisch", serif;
+    line-height: 1;
+}
+
+.nav .nav-link {
+    color: #000000;
+}
+
+.nav .nav-link.active {
+    background-color: #ffffff;
+    color: #ff0000;
+}
