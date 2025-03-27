@@ -1,5 +1,12 @@
+body {
+    background-color: #fdf4e3;
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+}
+
 .navbar {
     background-color: #E03932;
+    border-bottom: 4px black solid;
 }
 
 .navbar-brand {
@@ -15,4 +22,19 @@
 .nav .nav-link.active {
     background-color: #000000;
     color: #ff0000;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.section-title {
+    font-family: "Bodoni Moda SC", serif;
+    font-weight: bold;
+}
+
+.red-text {
+    color: #c10000;
 }
