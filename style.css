@@ -6,24 +6,27 @@ body {
 
 .navbar {
     font-family: "Playfair Display", serif;
-    background-color: #E03932;
+    background-color: #c10000;
     border-bottom: 4px black solid;
 }
 
 .navbar-brand {
-    color: #000000;
     font-family: "UnifrakturMaguntia", cursive;
     line-height: 1;
 }
 
 .nav .nav-link {
     text-transform: uppercase;
+}
+
+.navbar-brand, .nav .nav-link,
+.section-title {
     color: #000000;
 }
 
-.nav .nav-link.active {
+#header .nav .nav-link.active {
     background-color: #000000;
-    color: #ff0000;
+    color: #ff9494;
 }
 
 .carousel-item img {
@@ -35,14 +38,80 @@ body {
 
 .section-title {
     font-family: "Playfair Display", serif;
-    color: #000000;
     font-weight: bold;
 }
 
-#about {
+#books ,#contact {
     background-color: #ffeae6;
 }
 
-.red-text {
+.red-text ,.nav .nav-link.red-text {
     color: #c10000;
+}
+
+.nav-world .nav-link.active, 
+#contact button {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.nav-world .nav-link.active:hover {
+    color: #ffffff;
+}
+
+#classes img {
+    height: 400px;
+    object-fit: cover;
+}
+
+#world span {
+    color: #000000;
+    font-style: italic;
+    font-size: 0.6em;
+}
+
+.nav-world .nav-link {
+    font-size: 1.25rem; 
+    padding: 2rem 2rem; 
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.error {
+    font-size: 0.8rem;
+    color: red;
+    font-style: italic;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+
+    .nav-world .nav-link {
+        font-size: 0.8rem; 
+    }
+
+    #classes img{
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 991px) {
+    .nav-world .nav-link {
+        font-size: 0.8rem;
+        padding: 2rem 1rem;  
+    }
+
+    #classes img{
+        object-fit: cover;
+        height: 200px;
+    }
 }
